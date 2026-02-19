@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4a853;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(212, 168, 83, 0.3);
+  color: #f0c674;
+}
+
+/* Custom underline for links */
+.gold-underline {
+  position: relative;
+}
+
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #d4a853;
+  transition: width 0.3s ease;
+}
+
+.gold-underline:hover::after {
+  width: 100%;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Markdown content styling */
+.prose-ancient {
+  color: #e5e5e5;
+}
+
+.prose-ancient h1,
+.prose-ancient h2,
+.prose-ancient h3 {
+  color: #f0c674;
+  font-family: Georgia, Cambria, 'Times New Roman', serif;
+}
+
+.prose-ancient a {
+  color: #d4a853;
+  text-decoration: none;
+}
+
+.prose-ancient a:hover {
+  text-decoration: underline;
+}
+
+.prose-ancient blockquote {
+  border-left-color: #d4a853;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.prose-ancient code {
+  background: #2a2a2a;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.prose-ancient img {
+  border-radius: 0.5rem;
+}

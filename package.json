@@ -1,0 +1,32 @@
+{
+  "name": "alternate-history-explorer",
+  "version": "1.0.0",
+  "description": "Digital encyclopedia exploring hidden history, lost civilizations, and cosmic mysteries",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "alternate-history",
+    "ancient-civilizations",
+    "encyclopedia"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.73.0",
+    "@supabase/supabase-js": "^2.95.3",
+    "exa-js": "^2.3.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-simple-maps": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  }
+}
